@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fala Palmas</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #030303;
+            color: white;
+            padding: 10px;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer {
+    background-color: #0a0a0a;
+    color: #ddd;
+    text-align: center;
+    padding: 20px 0; /* Ajuste o padding conforme necessário */
+    width: 100%;
+    position: relative;
+    margin-top: auto; /* Garante que o rodapé vá para o fundo quando o conteúdo for curto */
+}
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px; /* Ajuste para não ficar embaixo do cabeçalho fixo */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .content section {
+            flex: 3;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .content aside {
+            flex: 1;
+            background-color: #685050;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .content aside ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .content aside ul li {
+            margin-bottom: 10px;
+        }
+
+        .content aside ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        ol {
+            margin: 20px 0;
+        }
+
+        /* Estilo para imagens com float */
+        .imagem-float {
+            float: left; /* Pode ser 'right' para alinhar à direita */
+            margin: 0 15px 15px 0; /* Espaçamento ao redor da imagem */
+            max-width: 100%; /* Ajusta o tamanho máximo conforme necessário */
+            border: 5px solid #000;
+            border-radius: 15px;
+            filter: grayscale(50%) sepia(30%);
+        }
+
+        /* Consultas de mídia para responsividade */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .content aside {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .imagem-float {
+                float: none;
+                display: block;
+                margin: 0 auto 15px auto;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fala Palmas</h1>
+        <nav>
+            <ul>
+                
+                <li><a href="gastronomia.html">Gastronomia</a></li>
+                <li><a href="turismo.html">Turismo</a></li>
+                <li><a href="politica.html">Política</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="content">
+        <aside>
+            <h3>Barra Lateral</h3>
+            <p>Assuntos do dia</p>
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+            </ul>
+        </aside>
+
+        <section id="gastronomia">
+            <article>
+                <h3>Eventos Gastronômicos</h3>
+                <p>Em Palmas, a capital de Tocantins, os eventos gastronômicos desempenham um papel crucial na promoção da rica e diversificada culinária local, além de fomentar a integração social e cultural. Estes eventos oferecem uma oportunidade para que os residentes e visitantes experimentem o melhor da gastronomia regional e celebrem a tradição e a inovação na cozinha.</p>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1Z4oDPCtcR9hqp5dxrpqnsyQcUDTpQTKxZeu7ck0_oujbeL307-0pRbKUEzHVcpIyNA9s1OS_57KaFu6qMlBbVHywxXCyZlKypXXFILLBSAYJVhDkxPRGgworyEm8m9fEpwr-BfztdTTFTeEkseGIxMDnP6kv6du6qOKn-v96SqBaz5qtCAdMDROAIWIf/s984/festival-gastronomico-de-taquarucu-2024.png" alt="Eventos Gastronômicos" class="imagem-float">
+            </article>
+        </section>
+        <section id="turismo">
+            <article>
+                <h3>Locais turísticos em Palmas</h3>
+                <p>Palmas, a capital do Tocantins, oferece uma experiência turística única com suas paisagens naturais e atrações culturais. A cidade é conhecida pelo Parque do Jalapão, que apresenta dunas e fervedouros espetaculares, além do Lago de Palmas, ideal para esportes aquáticos e lazer. O Palácio Araguaia e a Catedral de Palmas são marcos históricos que refletem a rica história da região. Com uma infraestrutura em crescimento e eventos culturais vibrantes, Palmas é um destino promissor para quem busca explorar a natureza e a cultura do Centro-Oeste brasileiro.</p>
+                <img src="https://tocantins.jornalopcao.com.br/wp-content/uploads/2024/05/Porto-Nacional-2.png.webp" alt="Locais turísticos" class="imagem-float">
+            </article>
+            
+            <section id="politica">
+                <article>
+                    <h3>Política em Palmas</h3>
+                    <p>Em Palmas, o cenário político está fervilhando com a proximidade das eleições para prefeito, e o futuro da cidade está em jogo! Se você quer entender como a liderança municipal pode impactar o desenvolvimento da cidade, é hora de se aprofundar nas escolhas disponíveis.</p>
+                    <img src="https://s2-g1.glbimg.com/UHeG3WdC-sK5mLEQRQ6LvsLkTM8=/0x0:1600x1200/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/y/y/PS1TIkTxmMECgIUlJJ3A/whatsapp-image-2024-08-05-at-18.19.15.jpeg" alt="Política em Palmas" class="imagem-float">
+                </article>
+            </section>
+        </div>
+    
+    <footer>
+        <p>&copy; 2024 Fala Palmas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
